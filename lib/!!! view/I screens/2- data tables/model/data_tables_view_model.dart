@@ -17,7 +17,9 @@ class DataTableViewModel extends GetxController {
 
   @override
   void onInit() async {
-    await getStatus();
+    super.onInit();
+
+    //   await getStatus(); this to check the status of my app
   }
 
   getStatus() async {

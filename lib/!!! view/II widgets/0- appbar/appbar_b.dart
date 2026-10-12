@@ -24,7 +24,7 @@ class AppBarB extends StatelessWidget implements PreferredSizeWidget {
               Get.to(() => OnboardingView());
             },
             icon: Icon(
-              FontAwesomeIcons.powerOff,
+              FaIcon(FontAwesomeIcons.powerOff).icon,
               size: 28,
             ))
       ],

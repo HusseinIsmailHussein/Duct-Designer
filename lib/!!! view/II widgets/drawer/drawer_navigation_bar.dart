@@ -34,12 +34,12 @@ class DrawerNavigationSideBar extends StatelessWidget {
             ),
           ),
           DrawerItem(
-              icon: FontAwesomeIcons.productHunt,
+              icon: FaIcon(FontAwesomeIcons.productHunt).icon!,
               text: 'Install Pro App',
               onTap: () => Methods().goToLink(
                   'https://play.google.com/store/apps/details?id=com.blueprint.duct_area_pro_app')),
           DrawerItem(
-              icon: FontAwesomeIcons.unity,
+              icon: FaIcon(FontAwesomeIcons.unity).icon!,
               text: 'More Apps',
               onTap: () => Methods().goToLink(
                   'https://play.google.com/store/apps/developer?id=Blueprint+Engineering+Solution')),

@@ -9,25 +9,25 @@ import '../2- data tables/data_table_systems.dart';
 List<PageModel> dataTableViewPages = [
   PageModel(
       name: 'Projects',
-      iconData: FontAwesomeIcons.buildingColumns,
+      iconData: FaIcon(FontAwesomeIcons.buildingColumns),
       page: const DataTableProjectsPage()),
   PageModel(
       name: 'Units',
-      iconData: FontAwesomeIcons.networkWired,
+      iconData: FaIcon(FontAwesomeIcons.networkWired),
       page: DataTableSystemsPage()),
   PageModel(
       name: 'Items',
-      iconData: FontAwesomeIcons.unity,
+      iconData: FaIcon(FontAwesomeIcons.unity),
       page: DataTableItemsPage()),
 ];
 
 List<PageModel> ductTypesPages = [
   PageModel(
       name: 'Rectangle Duct',
-      iconData: FontAwesomeIcons.square,
+      iconData: FaIcon(FontAwesomeIcons.square),
       page: GridViewDuctList(category: 'Rectangular Duct')),
   PageModel(
       name: 'Round Duct',
-      iconData: FontAwesomeIcons.circle,
+      iconData: FaIcon(FontAwesomeIcons.circle),
       page: GridViewDuctList(category: 'Round Duct')),
 ];

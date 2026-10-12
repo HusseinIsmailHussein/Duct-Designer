@@ -1,6 +1,7 @@
 import 'package:duct_area_app/!!%20data/themes/color/app_colors.dart';
 import 'package:duct_area_app/!%20core/model/page_model.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
 import '../../I screens/1- duct items/model/duct_items_view_model.dart';
@@ -56,7 +57,7 @@ class TabsViewWidgetItems extends StatelessWidget {
                   children: [
                     SizedBox(height: 5),
                     Icon(
-                      pagesView[index].iconData,
+                      pagesView[index].iconData.icon,
                       size: 30,
                       color: index == controller.navigationValue
                           ? Colors.amber

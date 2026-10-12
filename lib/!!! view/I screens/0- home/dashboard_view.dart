@@ -34,12 +34,12 @@ class DashboardView extends StatelessWidget {
     MaterialSettingsView(),
   ];
 
-  List<IconData> iconsData = [
-    FontAwesomeIcons.airbnb,
-    FontAwesomeIcons.unity,
-    FontAwesomeIcons.buildingColumns,
-    Icons.settings,
-    Icons.settings
+  List<Icon> iconsData = [
+    FaIcon(FontAwesomeIcons.airbnb),
+    FaIcon(FontAwesomeIcons.unity),
+    FaIcon(FontAwesomeIcons.buildingColumns),
+    Icon(Icons.settings),
+    Icon(Icons.settings)
   ];
 
   @override
@@ -115,7 +115,7 @@ class DashboardView extends StatelessWidget {
             Container(
               alignment: Alignment.bottomRight,
               child: Icon(
-                iconsData[index],
+                iconsData[index].icon,
                 size: 40,
                 color: Colors.red,
               ),

@@ -13,7 +13,7 @@ import '!!! view/I screens/4- material settings/model/material_settings_controll
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  // await Firebase.initializeApp(); this is looking my app
   await GetStorage.init();
   final prefs = await SharedPreferences.getInstance();
   bool showHome = prefs.getBool('showHome') ?? false;

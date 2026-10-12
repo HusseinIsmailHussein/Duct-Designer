@@ -60,7 +60,7 @@ class TabsViewWidget extends StatelessWidget {
                       height: 7,
                     ),
                     Icon(
-                      pagesView[index].iconData,
+                      pagesView[index].iconData.icon,
                       color: index == controller.navigationValue
                           ? Colors.amber
                           : Colors.white,
